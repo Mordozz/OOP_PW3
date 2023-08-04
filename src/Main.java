@@ -20,7 +20,20 @@ public class Main {
         cats.get(2).setOwner(owner1);
         cats.get(3).setOwner(owner3);
         cats.get(4).setOwner(owner2);
+
+/*        CatAction changeNameAction = new CatAction() {
+            @Override
+            public void performAction(Cat cat) {
+                cat.setName("Васька");
+            }
+        };
+
+        for (Cat cat : cats) {
+            cat.performAction(changeNameAction);
+        }
+*/
         sortByAge(cats);
+
 
         for (Cat cat : cats) {
             Owner owner = cat.getOwner();

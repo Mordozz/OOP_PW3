@@ -61,4 +61,8 @@ class Cat implements Animal, Pet, AboutOwner, Greeting, OwnerActions, Comparable
     public int compareTo(Cat otherCat) {
         return Integer.compare(this.age, otherCat.age);
     }
+
+    public void performAction(CatAction action) {
+        action.performAction(this);
+    }
 }
